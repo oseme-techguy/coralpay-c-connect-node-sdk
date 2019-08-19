@@ -1,0 +1,9 @@
+node_modules/
+assets/coralpay.pub.key
+*.env
+config.json
+lib
+test.js
+assets/testpriv.key
+assets/testpub.key
+.DS_Store
