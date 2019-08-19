@@ -15,12 +15,12 @@ $ npm install --save oseme-techguy/coralpay-c-connect-node-sdk
 
 
 ```javascript
-const { CoralPay } = require("coralpay-c-connect-node-sdk")
+const { CoralPayCConnect } = require("coralpay-c-connect-node-sdk")
 ```
 
 #### Instantiate
 ```javascript
-const coral = new CoralPay({
+const coral = new CoralPayCConnect({
 	cConnectServiceBaseUrl: "http://localhost.com/", // the base url for the C-Connect Cgate service (include the trailling backslash)
 	cConnectPublicEncryptionKeyPath: "/assets/coralpay.pub.key", // absolute path to CoralPay's C-Connect Cgate public key for encrypting requests - defaults to this value if not passed
 	privateKeyPath: "/assets/testpriv.key", // absolute path to your private key for decrypting responses
