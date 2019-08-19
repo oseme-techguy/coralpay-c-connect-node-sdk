@@ -1,0 +1,51 @@
+{
+  "name": "coralpay-c-connect-node-sdk",
+  "version": "0.3.7",
+  "description": "This is a library/sdk for communicating to the CoralPay C-Connect payment service.",
+  "main": "lib/coralpay.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "lint": "eslint .",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "payment",
+    "cgate",
+    "coralpay",
+    "pgp",
+    "ussd",
+    "nigeria"
+  ],
+  "author": {
+    "name": "Oseme Odigie",
+    "url": "http://osemeodigie.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "6.2.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "husky": "2.7.0"
+  },
+  "dependencies": {
+    "gpg": "0.6.0",
+    "locutus": "2.0.11",
+    "openpgp": "4.6.0",
+    "request": "2.88.0",
+    "request-promise": "4.2.4",
+    "shelljs": "0.8.3"
+  },
+  "files": [
+    "assets/**/*",
+    "lib/**/*",
+    "keymanager.js"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format && npm run build"
+    }
+  }
+}
