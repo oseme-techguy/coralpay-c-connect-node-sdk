@@ -1,6 +1,8 @@
 /**
  * Created by osemeodigie on 13/05/2018.
  * objective: building to scale
+ * 
+ * @author (Author): Oseme Odigie @oseme-techguy
  *
  * @package CoralPayPGPLibrary
  */
