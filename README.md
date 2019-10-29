@@ -20,6 +20,8 @@ const { CoralPayCConnect, Utilities } = require("coralpay-c-connect-node-sdk")
 
 #### Instantiate
 ```javascript
+const CORAL_ENCRYPTION_KEY = fs.readFileSync(path.resolve(__dirname, './../assets/coralpay.pub.key'), 'utf8');
+
 const coral = new CoralPayCConnect({
 	cConnectServiceBaseUrl: "http://localhost.com/", // the base url for the C-Connect Cgate service (include the trailling backslash)
 	cConnectPublicEncryptionKeyPath: "/assets/coralpay.pub.key", // absolute path to CoralPay's C-Connect Cgate public key for encrypting requests - defaults to this value if not passed

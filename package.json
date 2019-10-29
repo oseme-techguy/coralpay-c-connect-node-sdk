@@ -1,6 +1,6 @@
 {
   "name": "coralpay-c-connect-node-sdk",
-  "version": "0.4.4",
+  "version": "0.4.7",
   "description": "This is a library/sdk for communicating to the CoralPay C-Connect payment service.",
   "main": "lib/coralpay-c-connect.js",
   "scripts": {
