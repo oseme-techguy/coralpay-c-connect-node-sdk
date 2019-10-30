@@ -8,3 +8,4 @@ assets/testpriv.key
 assets/testpub.key
 .DS_Store
 index.js
+keys/
