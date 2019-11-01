@@ -1,5 +1,5 @@
 /**
- * Created by osemeodigie on 13/05/2018.
+ * Created by osemeodigie on 13/05/2019.
  * objective: building to scale
  * 
  * @author (Author): Oseme Odigie @oseme-techguy
@@ -289,7 +289,8 @@ const convertBinaryStringToUint8Array = (binaryString) => {
       return '-----END ' + marker.toUpperCase() + '-----';
   }
 
-  /**
+  /** This is used to calculate Cyclic Redundancy Checksum on a string
+   * 
    * @see http://tools.ietf.org/html/rfc4880#section-6
    * @see http://tools.ietf.org/html/rfc4880#section-6.1
    */
@@ -335,7 +336,7 @@ const convertBinaryStringToUint8Array = (binaryString) => {
     return wrappedWordLines.join(breakChar);
   }
 
-  /**
+  /** Used to ernamor a PGP message
    * @see http://tools.ietf.org/html/rfc4880#section-6
    * @see http://tools.ietf.org/html/rfc4880#section-6.2
    * @see http://tools.ietf.org/html/rfc2045
