@@ -27,10 +27,10 @@ const coral = new CoralPayCConnect({
 	cConnectPublicEncryptionKeyPath: "/assets/coralpay.pub.key", // absolute path to CoralPay's C-Connect Cgate public key for encrypting requests - defaults to this value if not passed
 	privateKeyPath: "/assets/testpriv.key", // absolute path to your private key for decrypting responses
 	passphrase: "your-private-key-passphrase-here", // the passpharse for your private key
-	userName: "SampleUser",
+	username: "SampleUser",
 	password: "SamplePassword",
-	merchantId: "000000000",
-    terminalId: "111111",
+	merchant_id: "000000000",
+    terminal_id: "111111",
     trace: false // enable this to see log of requests and responses or pass your custom logging function
 });
 
@@ -45,17 +45,17 @@ const utilities = new Utilities({
 
 #### Invoke Reference
 ```javascript
-const refRequest = await coral.invokeReference({ Amount: 1200, Channel: "WEB", TraceID: "1234567890" });
+const refRequest = await coral.invokeReference({ amount: 1200, channel: "WEB", trace_id: "1234567890" });
 ```
 
 #### Status Query
 ```javascript
-const verifyReq = await coral.queryTransaction({ Amount: 1200 , TransactionID: '19051403000000004299'});
+const verifyReq = await coral.queryTransaction({ amount: 1200 , transaction_id: '19051403000000004299'});
 ```
 
 #### Using Utility Methods (Encrypt Request)
 ```javascript
-const refRequest = await utilities.encryptRequest({ Amount: 1200, Channel: "WEB", TraceID: "1234567890" });
+const refRequest = await utilities.encryptRequest({ amount: 1200, channel: "WEB", trace_id: "1234567890" });
 ```
 
 #### Using Utility Methods (Decrypt Response Payload)
