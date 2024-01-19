@@ -37,7 +37,7 @@
   "dependencies": {
     "gpg": "0.6.0",
     "locutus": "2.0.15",
-    "openpgp": "4.6.0",
+    "openpgp": "4.10.11",
     "request": "2.88.0",
     "request-promise": "4.2.4",
     "shelljs": "0.8.5"
