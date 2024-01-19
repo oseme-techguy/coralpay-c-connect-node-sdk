@@ -40,7 +40,7 @@
     "openpgp": "4.6.0",
     "request": "2.88.0",
     "request-promise": "4.2.4",
-    "shelljs": "0.8.3"
+    "shelljs": "0.8.5"
   },
   "license": "ISC",
   "homepage": "https://github.com/oseme-techguy/coralpay-c-connect-node-sdk",
