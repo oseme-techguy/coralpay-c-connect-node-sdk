@@ -29,10 +29,10 @@
     "url": "https://github.com/oseme-techguy/coralpay-c-connect-node-sdk.git"
   },
   "devDependencies": {
-    "eslint": "6.2.0",
+    "eslint": "9.39.1",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-import": "2.18.2",
-    "husky": "2.7.0"
+    "husky": "9.1.7"
   },
   "dependencies": {
     "gpg": "0.6.0",
